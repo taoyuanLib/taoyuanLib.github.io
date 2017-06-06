@@ -36,7 +36,7 @@ body {
 	
 }
 #nav {
-	width: 25%;
+	width: 35%;
 	height: 60px;
 	position: absolute;
 	top: 40px;
@@ -188,6 +188,3 @@ body {
 .icon_animation:hover {
 	transform:scale(1.5);
 }
-.cls-5:hover {
-	fill:#FF6700;	
-	}

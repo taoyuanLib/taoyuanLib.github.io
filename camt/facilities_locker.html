@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>設施介紹</title>
+<style type="text/css">
+#header {
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffdd4d;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	float: left;
+}
+#header #logo {
+	margin-left: 0px;
+	margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+}
+#nav {
+	height: 60px;
+	width: 40%;
+	margin-top: 100px;
+	float: right;
+}
+#homeicon  {
+	float: right;
+	margin-top: 110px;
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+}
+.nav1 {
+	width: 100px;
+	height: 30px;
+	background-color: #669933;
+	text-align: center;
+	font-size: x-large;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #669933;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	float: right;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.nav02 {
+	width: 100%;
+	background-color: #595757;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 0px;
+	float: left;
+	height: 10px;
+}
+.footer {
+	height: 30px;
+	bottom: 0;
+	width: 100%;
+	background-color: #595757;
+	float: left;
+	font-size: x-small;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 10px;
+}
+#wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main  {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 680px;
+}
+.title {
+	height: 30px;
+	width: 97.6%;
+	float: left;
+	border-top-left-radius: 30px;
+	background-color: #669933;
+	color: #FFFFFF;
+	padding-top: 10px;
+	margin-top: 10px;
+	font-size: large;
+	border: 2px solid #669933;
+	padding-left: 2%;
+	
+}
+.content {
+	width: 95.6%;
+	min-height: 580px;
+	border: 2px solid #669933;
+	border-bottom-right-radius: 30px;
+	float: left;
+	text-align: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: #636363;
+}
+.text01 {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#nav .nav1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.board {
+	height: 100%;
+}
+.board .board_pic {
+	width: 64%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.board .board_text {
+	width: 29.6%;
+	height: 100%;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 32px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header id="header" style=""><img src="svg/logo.svg" alt="LOGO" width="150" id="logo"/>
+    
+    <nav id="nav">
+      
+	  <nav class="nav1"><a href="feedback.html">意見回饋</a> </nav>
+      <nav class="nav1"> <a href="spaceguide.html">空間導覽</a></nav>
+      <nav class="nav1"> <a href="aboutus.html">關於我們</a></nav>
+    </nav>
+    <div id="homeicon"><a href="index.html"><img src="svg/home.svg" alt="home" width="40" height="40" /></a></div>
+    
+  </header>
+<div class="nav02"> </div>
+  <div class="main">
+    <div class="title"> 置物區</div>
+    <div class="content">
+      <div class="board">
+   <!--照片滑動 -->     	
+      	<div class="board_pic">
+      	 <img class="mySlides" src="img/locker001.png" style="width:100%">
+         <!--<img class="mySlides" src="img/informationdesk002.png" style="width:100%">
+         <button class="button-left" style="width: 50px;height: 30px; position: relative;top: -50%;" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -82.5%;" onclick="plusDivs(1)">&#10095;</button>-->
+      	</div>
+      	
+ <!--照片滑動程式碼 -->     	
+      	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+      	<div class="board_text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
+    </div>
+    <a href="spaceguide.html" style="float: left;margin-left: 5%;margin-top:5px;color: #636363;"><img src="svg/pre.svg" alt="" width="40"/>回空間導覽</a>
+
+  </div>
+  <div class="footer"> 版權所有 © 桃園市兒童美術館</div>
+  
+</div>
+</body>
+</html>

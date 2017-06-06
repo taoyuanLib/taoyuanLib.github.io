@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Children's Art Museum,Taoyuan </title>
+<meta name="Description" content="Children's Art Museum,Taoyuan">
+<style type="text/css">
+	body {
+	width: 100%;
+	height: 100%;
+}
+#wrapper {
+	background-image: url(svg/bg.svg);
+	width: 1280px;
+	height: 810px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin:0px auto;
+	position: relative;
+	top: -12px;
+	left: -8px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+ 
+
+#header {
+	width: 100%;
+	height: 250px;
+	margin-left: 0px;
+	padding-left: 0px;
+	position: absolute;
+	top: 0px;
+}
+#logo {
+	width: 200px;
+	height: 200px;
+	margin-top: 25px;
+	margin-left: 11%;
+	
+}
+#nav {
+	width: 35%;
+	height: 60px;
+	position: absolute;
+	top: 40px;
+	right: 5%;
+	z-index: 257;
+}
+.nav_special {
+	opacity: 1;
+}
+
+
+#box {
+		width: 100%;
+	    height: 759px;
+        float: left;
+}
+.iconbox  {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+.icon  {
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin-left: 30px;
+}	
+.iconbox .icon img {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.iconsvg	  {
+		transition: transform .5s;
+		
+	}
+.iconsvg:hover	  {
+		
+		transform:scale(1.3);
+	    opacity: 0.5;
+	}	
+.icontext  {
+	width: 120px;
+	height: 30px;
+	float: left;
+	margin-left: 30px;
+	font-size: large;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	font-weight: bolder;
+	color: #FFFFFF;
+	background-color: #669933;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.icontext a   {
+	font-size: large;
+	color: #FFFFFF;
+	text-decoration: none;		
+	}	
+.icontext a:hover   {
+	font-size: large;
+	color: #Ffae4b;
+	text-decoration: none;		
+	}		
+	
+#iconhead  {
+	width: 250px;
+	height: 150px;	
+	float: left;
+}	
+#news {
+	width: 200px;
+	height: 200px;
+	font-family:DFWaWa-W5-WINP-BF, DFPWaWa-B5,Microsoft JhengHei;
+	position: absolute;
+	left: 7%;
+	top: 65%;
+	z-index: 255;
+	transition: transform .5s;
+}
+	#news:hover{
+		transform:scale(1.5);
+	}	
+	
+#newsbg {
+	opacity: 0.75;
+	position: absolute;
+}
+#newstitle {
+	width: 150px;
+	font-size: x-large;
+	position: absolute;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.news01 {
+	font-size: medium;
+	line-height: 1;
+	margin-top: 20px;
+	color: #2E2E2E;
+	float: left;
+	width: 100%;
+}
+#box #news .newsbrief {
+	width: 140px;
+	height: 120px;
+	margin-top: 30px;
+	margin-left: 30px;
+	position: absolute;
+}
+#footer {
+	width: 95%;
+	background-color: #595757;
+	height: 30px;
+	text-align: left;
+	font-size: small;
+	color: #FFFFFF;
+	padding-top: 17px;
+	padding-left: 5%;
+	position: absolute;
+	bottom: 0%;
+	z-index: 300;
+}
+	
+.eng {
+	width: 8%;
+	height: 30px;
+	margin-right: 5%;
+	float: right;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Microsoft JhengHei;
+}
+.animation {
+	opacity: 1;
+	margin-top: 440px;
+	position: relative;
+	margin-left: 0px;
+	left: -195px;
+}
+.icon_animation {
+	position: absolute;
+	z-index: 400;
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+	transition: transform .5s;
+}
+.icon_animation:hover {
+	transform:scale(1.5);
+}
+	
+	
+	
+
+.frog {
+	-webkit-animation-name: frogmove; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: frogmove;
+	animation-duration: 2s;
+	position: absolute;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes frogmove {
+    from   { left:0px; top:300px;}
+    to { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes frogmove {
+    from   { left:0px; top:300px;}
+    to{ left:0px; top:0px;}
+}	
+.froghand {
+	position: absolute;
+	z-index: 250;
+	top: 30px;
+}
+.frogbody {
+	position: absolute;
+	z-index: 120;
+	top: 30px;
+}
+	
+.frogeye_l {
+	-webkit-animation-name: eyerotation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-delay:2s;
+	-webkit-transform-origin: 770px 467px;
+	-webkit-animation-iteration-count:2;
+	animation-timing-function: linear;
+	animation-name: eyerotation;
+	animation-duration: 0.3s;
+    animation-delay:2s;
+	transform-origin: 770px 467px;
+	animation-iteration-count:2;
+	animation-timing-function: linear;
+	position: absolute;
+	z-index: 130;
+	top: 30px;
+	}
+.frogeye_r {
+	-webkit-animation-name: eyerotation; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-delay:2s;
+	-webkit-transform-origin: 495px 467px;
+	-webkit-animation-iteration-count:2;
+	-webkit-animation-timing-function: linear;
+	animation-name: eyerotation;
+	animation-duration: 0.3s;
+    animation-delay:2s;
+	transform-origin: 495px 467px;
+	animation-iteration-count:2;
+	animation-timing-function: linear;
+	position: absolute;
+	z-index: 131;
+	top: 30px;
+	}	
+@-webkit-keyframes eyerotation {
+	to {transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes eyerotation {
+	to {transform: rotate(360deg);}
+}	
+	
+.wave004 {
+	-webkit-animation-name: wavemove4; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: wavemove4;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	
+	position: absolute;
+	z-index: 140;
+	top: 650px;
+	right: 0px;
+}
+@keyframes wavemove4 {
+    0%   { right:0px; top:650px;}
+	50%   { right:-40px; top:650px;}
+    100%  { right:0px; top:650px;}
+}	
+@-webkit-keyframes wavemove4 {
+    0%   { right:0px; top:650px;}
+	50%   { right:-40px; top:650px;}
+    100%  { right:0px; top:650px;}
+}	
+	
+.wave003 {
+	-webkit-animation-name: wavemove3; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: wavemove3;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	
+	position: absolute;
+	z-index: 150;
+	top: 670px;
+}
+@keyframes wavemove3 {
+    0%   { left:0px; top:670px;}
+	50%   { left:-40px; top:670px;}
+    100%  { left:0px; top:670px;}
+}	
+@-webkit-keyframes wavemove3 {
+    0%   { left:0px; top:670px;}
+	50%   { left:-40px; top:670px;}
+    100%  { left:0px; top:670px;}
+}	
+	
+.wave002 {
+	-webkit-animation-name: wavemove2; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: wavemove2;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	position: absolute;
+	z-index: 150;
+	top: 690px;
+	right: 0px;
+}
+@keyframes wavemove2 {
+    0%   { right:0px; top:690px;}
+	50%   { right:-40px; top:690px;}
+    100%  { right:0px; top:690px;}
+}	
+@-webkit-keyframes wavemove2 {
+    0%   { right:0px; top:690px;}
+	50%   { right:-40px; top:690px;}
+    100%  { right:0px; top:690px;}
+}	
+	
+.wave001 {
+	-webkit-animation-name: wavemove1; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: wavemove1;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	position: absolute;
+	z-index: 160;
+	top: 720px;
+}
+@keyframes wavemove1 {
+    0%   { left:0px; top:720px;}
+	50%   { left:-40px; top:720px;}
+    100%  { left:0px; top:720px;}
+}	
+@-webkit-keyframes wavemove1 {
+    0%   { left:0px; top:720px;}
+	50%   { left:-40px; top:720px;}
+    100%  { left:0px; top:720px;}
+}	
+	
+	
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="box">
+    <div id="header">
+      <div id="logo"><img src="svg/logo.svg" alt="" width="200" height="200"/></div>
+    </div>
+	<div id="nav">
+		<div class="nav_special"> <a href="aboutus_En.html"><img style="margin-left: 15px " src="img/aboutus_En.png" width="120px"  alt=""/></a><a href="spaceguide_En.html"><img style="margin-left: 15px " src="img/spaceguide_En.png" width="120px"  alt=""/></a><a href="feedback_En.html"><img style="margin-left: 15px " src="img/feedback_En.png" width="120px"  alt=""/></a></div>
+    </div> 
+    
+     <!-- 圓形 Icon-->
+	<div class="icon_animation" style="left:55%;top: 30%"> <a href="newstemp.html"><img src="img/exhibition_En.png" alt="" width="120"/></a></div>
+    <div class="icon_animation" style="left:66%;top: 22.5%"> <a href="activitieslist.html"><img src="img/activity_En.png" alt="" width="120"/></a></div>
+    <div class="icon_animation" style="left:77%;top: 20%"> <a href="http://space.typl.gov.tw:8080/#/home?_k=svzfkh"><img src="img/booking_En.png" alt="" width="120"/></a></div>
+    <div class="icon_animation" style="left:88%;top: 22%"> <a href="https://www.facebook.com/typlib"><img src="img/record_En.png" alt="" width="120"/></a></div>
+      <div class="froghand"><img src="frog/frogHand-1.png" width="1280" height="759" alt=""/> </div>
+     <div class="frog">
+      <div class="frogbody"><img src="frog/frogBody-1.png" width="1280" height="759" alt=""/></div>
+      <div class="frogeye_l"><img src="frog/frogEyeL-1.png" width="1280" height="759" alt=""/></div>
+      <div class="frogeye_r"><img src="frog/frogEyeR-1.png" width="1280" height="759" alt=""/></div>
+    </div>
+<div class="wave004"><img src="frog/wave004_1.png" width="1458" height="303" alt=""/></div>
+    <div class="wave003"><img src="frog/wave003_1.png" width="1458" height="303" alt=""/></div>
+    <div class="wave002"><img src="frog/wave002_1.png" width="1458" height="303" alt=""/></div>
+    <div class="wave001"><img src="frog/wave001_1.png" width="1458" height="303" alt=""/></div>
+    
+    <!-- 最新消息-->
+<div id="news"><img src="svg/news.svg" alt="" width="200" id="newsbg"/>
+      <a href="newslist.html" style="color: #FFFFFF;"><div id="newstitle">NEWS</div></a>
+      <div class="newsbrief">
+     
+          <div class="news01">
+			 <a href="newstemp.html" style=" color:#2E2E2E;text-decoration: none; ">一起好好玩 黃沛瀅與孩子們的瓦楞紙創作</a>
+          <a href="newslist.html" style="width: 15%;font-size: x-small;float: right; color: white;text-decoration: none; ">More</a>
+          </div>
+      </div>
+  </div>
+  <div id="footer"> Copyright © Children's Art Museum,Taoyuan
+  <a href="index_En.html" class="eng"> English</a>
+  </div>
+  </div>
+</div>
+</body>
+</html>

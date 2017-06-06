@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>當期展覽</title>
+<style type="text/css">
+#header {
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffdd4d;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	float: left;
+}
+#header #logo {
+	margin-left: 0px;
+	margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+}
+#nav {
+	height: 60px;
+	width: 40%;
+	margin-top: 100px;
+	float: right;
+}
+#homeicon  {
+	float: right;
+	margin-top: 110px;
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+}
+.nav1 {
+	width: 100px;
+	height: 30px;
+	background-color: #669933;
+	text-align: center;
+	font-size: x-large;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #669933;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	float: right;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.nav02 {
+	width: 100%;
+	background-color: #595757;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 0px;
+	float: left;
+	height: 10px;
+}
+.footer {
+	height: 30px;
+	width: 100%;
+	background-color: #595757;
+	float: left;
+	font-size: x-small;
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 10px;
+}
+#wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main  {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	height: 100%;
+}
+.title {
+	height: 30px;
+	width: 97.6%;
+	float: left;
+	border-top-left-radius: 30px;
+	background-color: #669933;
+	color: #FFFFFF;
+	padding-top: 10px;
+	margin-top: 10px;
+	font-size: large;
+	border: 2px solid #669933;
+	padding-left: 2%;
+	
+}
+.content {
+	width: 95.6%;
+	border: 2px solid #669933;
+	border-bottom-right-radius: 30px;
+	float: left;
+	text-align: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: #636363;
+}
+.text01 {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#nav .nav1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.board {
+	height: 100%;
+	margin-top: 20px;
+}
+.board .board_pic {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.board .board_text {
+	width: 100%;
+	height: 100%;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 32px;
+	font-weight: lighter;
+	
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <header id="header" style=""><img src="svg/logo.svg" alt="LOGO" width="150" id="logo"/>
+    
+    <nav id="nav">
+      
+	  <nav class="nav1"><a href="feedback.html">意見回饋</a> </nav>
+      <nav class="nav1"> <a href="spaceguide.html">空間導覽</a></nav>
+      <nav class="nav1"> <a href="aboutus.html">關於我們</a></nav>
+    </nav>
+    <div id="homeicon"><a href="index.html"><img src="svg/home.svg" alt="home" width="40" height="40" /></a></div>
+    
+  </header>
+<div class="nav02"> </div>
+  <div class="main">
+    <div class="title"> 一起好好玩 黃沛瀅與孩子們的瓦楞紙創作</div>
+    <div class="content">
+      <div class="board">
+   <!--照片滑動 -->     	
+      	<div class="board_pic">
+      	 <img class="mySlides" src="img/首展照片1.jpg" style="display:block;height: 600px; margin:auto;max-width: 800px;max-height: 600px;">
+         <img class="mySlides" src="img/首展照片2.jpg" style="display:block;height: 600px; margin:auto;max-width: 800px;max-height: 600px;">
+         <img class="mySlides" src="img/首展照片3.jpg" style="display:block;height: 600px; margin:auto;max-width: 800px;max-height: 600px;">
+         <button class="button-left" style="width: 50px;height: 30px; position: relative;top: -50%;" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -88.5%;" onclick="plusDivs(1)">&#10095;</button>
+      	</div>
+      	
+ <!--照片滑動程式碼 -->     	
+      	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	    <div class="board_text">
+		  <h2 style="font-family: Microsoft JhengHei;">桃園市立圖書館桃園市兒童美術館首展─</h2>
+		  <h2 style=" font-family: Microsoft JhengHei;">「一起好好玩 黃沛瀅與孩子們的瓦楞紙創作」</h2>
+
+			  <h3>展覽地點：桃園市立圖書館桃園市兒童美術館</h3>  
+			  <h3>展覽日期：106年5月13日至106年9月3日止</h3>
+			  <h3>主辦單位：桃園市立圖書館 桃園市兒童美術館</h3>
+			  <h3>執行單位：彤繡工坊</h3>
+
+			  <h3>藝術家：黃沛瀅</h3>
+			  <h3>參與學校：八德國小、大成國小、大安國小、大忠國小、大勇國小、茄苳國小、瑞豐國小、廣興國小、霄裡國小</h3>
+			  <h3>參與志工：桃園市立圖書館桃園市兒童美術館全體志工</h3>
+			  <h3 style="padding-left: 10%;padding-right: 10%;font-style: italic;font-weight: lighter;" >「原本就是一種生命的牠，彷彿犯了錯而被下了魔咒。幻化成某種形式化的模樣：原本溫柔的性格，得強裝剛毅；原本自由的生長意志，得被箝制在既定的規格之中；而這一切唯有滿足了人類的包裝與生活上的需求，牠才能贏得存在的價值，否則就得被遺棄。」</h3>
+			  <h3 style="font-weight: lighter;" >二○○六年，藝術家黃沛瀅在臺北市立美術館「自遊．自在 黃沛瀅創作個展」畫冊創作自述中，以說故事的方式介紹了「瓦楞紙」這個生活中常見的工業素材，而大約就從一九九六年起，她開始使用『牠』作為創作媒材，並逐漸發展出以「蔓延」為名的個人創作脈絡。如同《愛麗絲夢遊仙境(Alice's Adventures in Wonderland)》故事中一個金黃色的午後，愛麗絲跟著一隻拿著懷錶，行色匆匆的兔子，掉進兔子洞，進入一個異於現實的奇妙世界一般，黃沛瀅擴充、跨越了你我對於「瓦楞紙」形貌上既定的使用法，解放隱藏其中，豐沛且奧妙的生命本質，帶領我們「一起走進」材質的異次元宇宙。</h3>
+			  <h3 style="font-weight: lighter;" >尋常材質在長時間高度手工的加持下，禁錮形體之下的靈魂重獲新生，藝術家從遊戲與實驗的狀態開始，不斷重複切割、分離、組裝、堆疊、扭轉、黏著等動作，逐漸形變瓦楞結構，賦予尋常一處不尋常的日常奇觀，創造一處可觀可遊的奇想世界。</h3>
+			  <h3 style="font-weight: lighter;" >「一起好好玩 黃沛瀅與孩子們的瓦楞紙創作」藝術家與其出生地，桃園地區的孩子們，一起運用她素常使用的創作媒材──瓦楞紙，以工作坊(workshop)集體創作模式，完成現地製作之大型空間裝置作品，最後在桃園市立兒童美術館中，匯集藝術家到校進行之瓦楞相框創作，以及在民眾參與活動中，與志工一同完成的瓦楞小山，凝結藝術家與參與者的創作結晶，見證每一個創作奇想，與溫暖的在地向心力。</h3>
+			  <h3 style="font-weight: lighter;" >對黃沛瀅而言，藝術創作就是單純的喜歡，就像寫日記一樣，一定得要用自己的話，才能寫出生命原有的樣貌。「一起好好玩」歡迎您好好地透過親近的材質、親身的參與，與親自的體驗，在這些層層疊疊的瓦楞紙中，跳脫印象中既定的所屬意義，在熟悉的氛圍下，重新看見媒材自身所散發的清新詩性，與你我生命中孕含的無限可能性。</h3>
+
+			  <h3 style="font-weight: lighter;" >本展覽同時整合了藝術家「蒞校互動教學」與「展場現地參與創作」，並搭配黃沛瀅既有的瓦楞紙作品展出模式，是一次統合了瓦楞紙多元互動成果的匯集展出，歡迎大家來與黃沛瀅「一起好好玩」！</h3>
+</div>
+      </div>
+    </div>
+       <a href="newslist.html" style="float: left;margin-left: 5%;margin-top:5px;color: #636363;"><img src="svg/pre.svg" alt="" width="40"/>回目錄</a>
+
+  </div>
+  <div class="footer"> 版權所有 © 桃園市兒童美術館</div>
+  
+</div>
+</body>
+</html>
