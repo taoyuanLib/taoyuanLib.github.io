@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<script type="text/javascript">
+function detectBrowser(){
+    var isIE = navigator.userAgent.search("MSIE") > -1;
+    var isIE7 = navigator.userAgent.search("MSIE 7") > -1;
+	var isEDGE = navigator.userAgent.search("Edge/") > -1;
+    var isFirefox = navigator.userAgent.search("Firefox") > -1;
+    var isOpera = navigator.userAgent.search("Opera") > -1;
+    var isSafari = navigator.userAgent.search("Safari") > -1;//Google瀏覽器核心
+    
+    if (isIE7) {
+        browser = 'IE7';
+    }
+    if (isIE) {
+        browser = 'IE';
+    }
+	if (isEDGE) {
+        browser = 'Edge';
+    }
+	
+	
+    if (isFirefox) {
+        browser = 'Firefox';
+    }
+    if (isOpera) {
+        browser = 'Opera';
+    }
+    if (isSafari) {
+        browser = 'Safari/Chrome';
+    }
+    return browser;
+}
+
+var browser = detectBrowser();
+	
+if (browser=='Edge'){
+	
+document.location.href="index_forie.html";
+}
+else{
+	document.location.href='http://www.google.com';
+}	
+</script>	
+</head>
+
+<body>
+</body>
+</html>
