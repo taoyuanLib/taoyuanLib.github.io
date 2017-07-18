@@ -122,8 +122,7 @@
 .board .board_pic {
 	width: 64%;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	float: left;
 }
 .board .board_text {
 	width: 29.6%;
@@ -132,6 +131,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 32px;
+	padding-top: 15px;
 }
 
 </style>
@@ -158,9 +158,10 @@
    <!--照片滑動 -->     	
       	<div class="board_pic">
       	 <img class="mySlides" src="img/PBarea.png" style="width:100%">
-         <!--<img class="mySlides" src="img/informationdesk002.png" style="width:100%">
+      	 <img class="mySlides" src="img/PBarea002.png" style="width:100%">
+
          <button class="button-left" style="width: 50px;height: 30px; position: relative;top: -50%;" onclick="plusDivs(-1)">&#10094;</button>
-         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -82.5%;" onclick="plusDivs(1)">&#10095;</button>-->
+         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -82.5%;" onclick="plusDivs(1)">&#10095;</button>
       	</div>
       	
  <!--照片滑動程式碼 -->     	
@@ -184,7 +185,7 @@ function showDivs(n) {
 }
 </script>
 
-      	<div class="board_text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      	<div class="board_text">多媒體柱提供當月主題繪本介紹，兒童繪本館藏閱讀區。</div>
       </div>
     </div>
     <a href="spaceguide.html" style="float: left;margin-left: 5%;margin-top:5px;color: #636363;"><img src="svg/pre.svg" alt="" width="40"/>回空間導覽</a>

@@ -123,8 +123,7 @@
 .board .board_pic {
 	width: 64%;
 	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	float: left;
 }
 .board .board_text {
 	width: 29.6%;
@@ -133,6 +132,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 32px;
+	padding-top: 15px;
 }
 
 </style>
@@ -159,9 +159,9 @@
    <!--照片滑動 -->     	
       	<div class="board_pic">
       	 <img class="mySlides" src="img/guidingwall.png" style="width:100%">
-         <!--<img class="mySlides" src="img/informationdesk002.png" style="width:100%">
+      	 <img class="mySlides" src="img/guidingwall01.png" style="width:100%">
          <button class="button-left" style="width: 50px;height: 30px; position: relative;top: -50%;" onclick="plusDivs(-1)">&#10094;</button>
-         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -82.5%;" onclick="plusDivs(1)">&#10095;</button>-->
+         <button class="button-right" style="width: 50px;height: 30px;position: relative;top: -50%;right: -82.5%;" onclick="plusDivs(1)">&#10095;</button>
       	</div>
       	
  <!--照片滑動程式碼 -->     	
@@ -185,7 +185,7 @@ function showDivs(n) {
 }
 </script>
 
-      	<div class="board_text"></div>
+      	<div class="board_text">VR experience’s introduction.<br>AR experience’s introduction.<br>Velcro area introduction.<br>Tabletop game area introduction.</div>
       </div>
     </div>
     <a href="spaceguide_En.html" style="float: left;margin-left: 5%;margin-top:5px;color: #636363;"><img src="svg/pre.svg" alt="" width="40"/>Back to Space Guide</a>
