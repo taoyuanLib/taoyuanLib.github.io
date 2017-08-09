@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=big5" />
+    <title>阿發長-雲端抽獎程式</title>
+    <style type="text/css">
+        <!-- body,
+        td,
+        th {
+            font-family: 標楷體;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+        
+        body {
+            background-color: #333333;
+        }
+        
+        -->
+
+    </style>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66125105-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script language="javascript">
+        var NoArray = new Array();
+        var NoPoint = 0;
+        // OnLoad事件初值
+        function Initial() {
+            mySmall.focus();
+            NoPoint = 0;
+        }
+
+        function Ok1_Click() {
+            if (mySmall.value == "") {
+                alert("您未輸入最小值！");
+                mySmall.focus();
+                return;
+            }
+            if (myLarge.value == "") {
+                alert("您未輸入最大值！");
+                myLarge.focus();
+                return;
+            }
+            if (eval(myLarge.value) <= eval(mySmall.value)) {
+                alert("您輸入的最大值必須比最小值大！");
+                myLarge.value = "";
+                myLarge.focus();
+                return;
+            }
+            myTimmer = setTimeout("Ok1_Click()", 20);
+            winner.innerHTML = "";
+            winner.innerHTML = Math.floor(Math.random() * (eval(myLarge.value) - eval(mySmall.value) + 1) + eval(mySmall.value))
+            draw1.disabled = "disabled";
+            draw2.disabled = "";
+            draw2.focus();
+        }
+
+        function Ok2_Click() {
+            clearTimeout(myTimmer);
+            winner.innerHTML = "";
+            x = Math.floor(Math.random() * (eval(myLarge.value) - eval(mySmall.value) + 1) + eval(mySmall.value));
+
+            if (NoPoint == (eval(myLarge.value) - eval(mySmall.value) + 1)) {
+                alert(NoPoint + " 個號碼都抽過了，系統將重新計數！");
+                mySmall.value = "";
+                myLarge.value = "";
+                NoPoint = 0;
+                draw1.disabled = "";
+                draw2.disabled = "disabled";
+                seled.innerHTML = "";
+                mySmall.focus();
+                return;
+            }
+
+            if (NoPoint > 0) {
+                var i = 0;
+                while (i < NoPoint) {
+                    if (NoArray[i] == x) {
+                        x = Math.floor(Math.random() * (eval(myLarge.value) - eval(mySmall.value) + 1) + eval(mySmall.value));
+                        i = 0;
+                    } else
+                        i += 1;
+                }
+            }
+
+            NoArray[NoPoint] = x;
+            NoPoint += 1;
+
+            if (x < 0) x = "-" + (-x);
+            x = "&nbsp;" + x + "&nbsp;";
+
+            var y = "";
+            for (i = 0; i < NoPoint; i++) {
+                if (i % 10 != 0) y += ",";
+                y += NoArray[i];
+                if ((i + 1) % 10 == 0) y += "<br>";
+            }
+
+            seled.innerHTML = "<font style='background-color:#00F; color:#FFF'><<已抽出 " + NoPoint + " 個號碼>></Font><br>" + y;
+            winner.innerHTML = "<font style='background-color:#FF0000'>得獎的是" + x + "</font>";
+            draw2.disabled = "disabled";
+            draw1.disabled = "";
+            draw1.focus();
+        }
+
+    </script>
+
+</head>
+
+<body onLoad="Initial();">
+
+    <br/>
+    <table align="center" border="0" width="90%">
+        <tr align="center" bgcolor="#0000FF">
+            <td colspan="4">
+                <font style="font-size:22px">◎　雲端抽獎程式 設計：阿發長　◎</font>
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                隨機抽出你指定區間的任一整數，
+                <font color="#FFFF00">而且不會重覆哦</font>！<br>請輸入最小和最大值後，開始搖獎。絕對公正哦！</td>
+            <td width="31%" colspan="2" rowspan="2"><img src="david.gif" width="146" height="218" /></td>
+        </tr>
+        <tr align="center" bgcolor="#FF0066">
+            <td colspan="2">
+                指定區間==>　　最小值：<input type="text" name="mySmall" id="mySmall" size="6" style="font-size:16px; font-weight:bolder" />　最大值：<input type="text" name="myLarge" id="myLarge" size="6" style="font-size:16px; font-weight:bolder" /></td>
+        </tr>
+        <tr align="center">
+            <td width="50%">
+                <br><br>
+                <BUTTON WIDTH="125" name="draw1" id="draw1" onclick="Ok1_Click();" style="border:thick; font-size:24px; font-family:'標楷體'; WIDTH:120px;  HEIGHT:50px; background-color:#006600; color:#FFFFFF;">開始搖獎</BUTTON>
+                <BUTTON WIDTH="125" disabled="disabled" name="draw2" id="draw2" onclick="Ok2_Click();" style="border:thick; font-size:24px; font-family:'標楷體'; WIDTH:120px;  HEIGHT:50px; background-color:#CC0099; color:#FFFFFF;">抽出</BUTTON><br><br>
+                <div id="seled"></div>
+            </td>
+            <td colspan="3"><br>
+                <div align="center" id="winner" style="font-size:50px"></div>
+            </td>
+        </tr>
+    </table>
+    <EMBED SRC="500flower.mp3" HIDDEN=TRUE AUTOSTART=TRUE LOOP=TRUE>
+</body>
+
+</html>
